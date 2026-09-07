@@ -1,0 +1,48 @@
+import { VideoLecture } from "@/types";
+
+export const videosData: VideoLecture[] = [
+  {
+    id: "vid-1",
+    title: "NEET 2025 AIR 45 Topper Talk: Aagam Jain's Secret Daily Schedule & Books",
+    teacher: "Aagam Jain & Dr. Sarfaraz",
+    subject: "NEET Strategy",
+    duration: "18:42",
+    thumbnail: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
+    category: "Topper Interview",
+    youtubeId: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    views: "84K views",
+  },
+  {
+    id: "vid-2",
+    title: "Organic Reaction Mechanisms in 45 Mins | Er. Mayank Sir Chemistry Masterclass",
+    teacher: "Er. Mayank Sir",
+    subject: "Chemistry",
+    duration: "45:10",
+    thumbnail: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=800",
+    category: "Masterclass",
+    youtubeId: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    views: "120K views",
+  },
+  {
+    id: "vid-3",
+    title: "Definite Integrals Property Hacks for JEE Advanced | Prof. Jagdish Meghani",
+    teacher: "Prof. Jagdish Meghani",
+    subject: "Mathematics",
+    duration: "34:25",
+    thumbnail: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800",
+    category: "Problem Solving",
+    youtubeId: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    views: "67K views",
+  },
+  {
+    id: "vid-4",
+    title: "Inside Definite Success Classes Bhopal Campus | Smart Labs, Library & CBT Tour",
+    teacher: "DSC Media Team",
+    subject: "Campus Tour",
+    duration: "08:15",
+    thumbnail: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=800",
+    category: "Campus Tour",
+    youtubeId: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    views: "45K views",
+  },
+];

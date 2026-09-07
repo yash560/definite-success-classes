@@ -1,0 +1,82 @@
+export const instituteData = {
+  name: "Definite Success Classes",
+  shortName: "DSC Bhopal",
+  tagline: "Empowering Aspirations, Defining Success Since 2002",
+  subTagline: "Central India's Leading Institute for IIT-JEE (Main & Adv), NEET-UG & Pre-Foundation",
+  establishedYear: 2002,
+  yearsOfExcellence: 24,
+  rating: 4.9,
+  reviewsCount: 1240,
+  alumniCount: "15,000+",
+  selectionsJEE: "3,850+",
+  selectionsNEET: "4,200+",
+  ntseOlympiadScholars: "1,200+",
+  selectionRate: "98.4%",
+  
+  contact: {
+    phonePrimary: "+91 9039020433",
+    phoneLandline: "0755-4852106",
+    whatsapp: "+919039020433",
+    email: "info@definitesuccess.in",
+    admissionsEmail: "admissions@definitesuccess.in",
+    operatingHours: "Monday to Sunday: 8:00 AM – 8:30 PM",
+    emergencyHelpline: "+91 9039020433",
+  },
+
+  socials: {
+    youtube: "https://www.youtube.com/@DefinitesuccessClasses",
+    youtubeHandle: "@DefinitesuccessClasses",
+    instagram: "https://instagram.com/definitesuccess",
+    facebook: "https://facebook.com/definitesuccessclasses",
+  },
+
+  primaryCenter: {
+    name: "Chetak Bridge Head Campus (Main)",
+    address: "63-B, Sector B, Kasturba Nagar, Near Chetak Bridge, Bhopal, Madhya Pradesh – 462023",
+    landmark: "Beside Chetak Bridge, Opposite Kasturba Hospital Road",
+    city: "Bhopal",
+    state: "Madhya Pradesh",
+    pincode: "462023",
+    mapQuery: "Definite+Success+Classes+Kasturba+Nagar+Bhopal",
+    googleMapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.836066224845!2d77.4422!3d23.2385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c424688b1!2sDefinite+Success+Classes!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    facilities: ["Smart 4K Digital Classrooms", "120-Seat CBT Lab", "Dedicated Doubt Booths", "Study Library", "Transport Hub"],
+  },
+
+  branches: [
+    {
+      id: "kasturba",
+      name: "Main Campus & CBT Center",
+      area: "Kasturba Nagar / Chetak Bridge",
+      address: "63-B, Sector B, Kasturba Nagar, Near Chetak Bridge, Bhopal - 462023",
+      phone: "+91 9039020433",
+      timing: "8:00 AM - 8:30 PM",
+      isHQ: true,
+    },
+    {
+      id: "mpnagar",
+      name: "MP Nagar City Hub",
+      area: "Zone-II, MP Nagar",
+      address: "Plot 14, Near Sargam Cinema, Zone-II, MP Nagar, Bhopal - 462011",
+      phone: "0755-4852106",
+      timing: "8:30 AM - 8:00 PM",
+      isHQ: false,
+    },
+    {
+      id: "kolar",
+      name: "Kolar & Gulmohar Extension Desk",
+      area: "Kolar Road & Rohit Nagar",
+      address: "A-Sector, Main Kolar Road, Near D-Mart, Bhopal - 462042",
+      phone: "+91 9039020433",
+      timing: "9:00 AM - 7:30 PM",
+      isHQ: false,
+    },
+  ],
+
+  transportRoutes: [
+    "Route 1: MP Nagar - Chetak Bridge - Kasturba Nagar",
+    "Route 2: Kolar Road - Chunabhatti - Shahpura - Arera Colony",
+    "Route 3: BHEL - Piplani - Indrapuri - Anand Nagar - Govindpura",
+    "Route 4: Hoshangabad Road - Misrod - Bagsewaniya - Saket Nagar",
+    "Route 5: Lalghati - Koh-e-Fiza - VIP Road - TT Nagar - Chetak Bridge",
+  ],
+};

@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --background: #FFFFFF;
+    --foreground: #0F172A;
+    --card: #F8FAFC;
+    --card-foreground: #0F172A;
+    --primary: #0284C7;
+    --primary-foreground: #FFFFFF;
+    --secondary: #0D9488;
+    --accent: #F59E0B;
+    --border: #E2E8F0;
+  }
+
+  .dark {
+    --background: #090D16;
+    --foreground: #F8FAFC;
+    --card: #0F172A;
+    --card-foreground: #F8FAFC;
+    --primary: #38BDF8;
+    --primary-foreground: #090D16;
+    --secondary: #14B8A6;
+    --accent: #FBBF24;
+    --border: #1E293B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  input, select, textarea {
+    font-size: 16px !important;
+    touch-action: manipulation;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0284C7;
+}
+
+/* Continuous Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Mobile snap slider */
+.mobile-snap-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mobile-snap-slider > * {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+/* Hide scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
