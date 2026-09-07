@@ -3,10 +3,11 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FloatingCallBar from "@/components/layout/FloatingCallBar";
+import AOSProvider from "@/components/layout/AOSProvider";
 
 export const metadata: Metadata = {
   title: "Definite Success Classes Bhopal | IIT-JEE, NEET & Pre-Foundation Institute",
-  description: "Definite Success Classes (Estd. 2002) is Bhopal's leading coaching institute for IIT-JEE (Main & Adv), NEET-UG & Pre-Foundation. Located at Kasturba Nagar near Chetak Bridge. Up to 100% DSSET Scholarship.",
+  description: "Definite Success Classes (Estd. 2002) is Bhopal's premier coaching institute for IIT-JEE (Main & Adv), NEET-UG & Pre-Foundation. Located at Kasturba Nagar near Chetak Bridge. Up to 100% DSSET Scholarship.",
   keywords: [
     "Definite Success Classes Bhopal",
     "DSC Bhopal",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Definite Success Classes (DSC) Bhopal | Estd. 2002",
     description: "Central India's leading coaching institute for IIT-JEE and NEET-UG with 4.9★ rating.",
-    url: "https://definitesuccess.in",
+    url: "https://definite-success-classes.thewebvale.com",
     siteName: "Definite Success Classes Bhopal",
     locale: "en_IN",
     type: "website",
@@ -32,14 +33,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="antialiased min-h-screen flex flex-col bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100">
-        <Navbar />
-        <main className="flex-grow pb-16 sm:pb-0">
-          {children}
-        </main>
-        <Footer />
-        <FloatingCallBar />
+    <html lang="en" className="scroll-smooth light">
+      <body className="antialiased min-h-screen flex flex-col bg-white text-slate-900 selection:bg-sky-500 selection:text-white">
+        <AOSProvider>
+          <Navbar />
+          <main className="flex-grow pb-16 sm:pb-0">
+            {children}
+          </main>
+          <Footer />
+          <FloatingCallBar />
+        </AOSProvider>
       </body>
     </html>
   );
